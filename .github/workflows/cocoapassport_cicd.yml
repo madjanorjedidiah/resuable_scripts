@@ -23,7 +23,7 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install Dependencies
       run: |
-        /home/ubuntu/.vrtualenvs/django_dev/bin/activate
+        source .vrtualenvs/django_dev/bin/activate
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Tests
